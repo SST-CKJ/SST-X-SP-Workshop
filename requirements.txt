@@ -1,0 +1,7 @@
+langchain
+langchain-openai
+pandas
+requests
+streamlit
+openai
+tiktoken
