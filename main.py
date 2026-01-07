@@ -13,10 +13,6 @@ st.set_page_config(
     page_title="My Streamlit App"
 )
 
-# Do not continue if check_password is not True.
-if not check_password():
-    st.stop()
-
 # endregion <--------- Streamlit App Configuration --------->
 
 st.title("Streamlit App")
