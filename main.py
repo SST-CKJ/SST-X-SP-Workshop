@@ -35,21 +35,6 @@ background_css = f"""
 """
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 img = Image.open("VBCarSharing.png")
-background_css = f"""
-<style>
-[data-testid="stAppViewContainer"] {{
-    background-image: 'Car.png';
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}}
-
-/* Optional: This creates a semi-transparent overlay to make text readable */
-[data-testid="stHeader"] {{
-    background-color: rgba(0,0,0,0);
-}}
-</style>
-"""
 
 image_url1 = "https://www.toyota.com.sg/showroom/new-models/-/media/f774090eab764ec6823ef7bd29e9950e.png"
 image_url2 = "https://images.hgmsites.net/lrg/2025-toyota-prius-limited-gs-angular-front-exterior-view_100965385_l.webp"
@@ -59,11 +44,11 @@ image_url5 = "https://media.mediaresults.com/wp-content/uploads/2025/08/26-trail
 
 
 #Setup AI
-API_KEY = st.secrets("OPENAI_API_KEY")
+API_KEY = "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"
 @dynamic_prompt
 def context(request: ModelRequest) -> str:
   return """
-  You are a helpful assistant built into a car rental website called VBTransport to answer queries about the cars and related topics. Use the following context in your responses:
+  You are a helpful assistant built into a car rental website called VB Transport to answer queries about the cars and related topics. Use the following context in your responses:
   We offer the Toyota Sienta ($5/h), Toyota Prius($3/h), Toyota RAV4($8/h), Mazda CX-3($10/h), and Subaru e-Outback($15/h) for rental.
   The Toyota Sienta is the family flexible favourite. It is a hybrid 7 seater(2 front + 3 middle + 2 rear). With all seats taken, this car can barely fit 2 backpacks (50L). With the 3rd row folded, the huge flat boot can fit 3 large suitcases and a stroller (575L).
   The Toyota Prius(Sedan/Liftback - 2023/2024 model) is a 5 seater that can fit 1 large and 1 medium sized suitcase (370L).
