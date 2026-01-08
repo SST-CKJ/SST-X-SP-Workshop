@@ -1,7 +1,11 @@
-langchain
-langchain-openai
-pandas
-requests
 streamlit
+pandas
+os
+csv
+datetime
 openai
-tiktoken
+langchain_openai
+langchain.agents
+langchain.agents.middleware
+PIL
+base64
