@@ -156,7 +156,7 @@ elif st.session_state.current_page == "List of Available Cars":
         st.text("💺: 7 Seater without back row folded")
         st.text("Boot Space: 50L without back row folded")
         st.text("Rate: $5/hr")
-    
+
     with st.container(horizontal=True, horizontal_alignment="distribute"):
       st.image(image_url2, caption="Toyota Prius (Sedan)", width=500)
       with st.container():
@@ -169,7 +169,7 @@ elif st.session_state.current_page == "List of Available Cars":
       with st.container():
         st.subheader("Toyota RAV4 (2024)")
         st.text("💺: 5 Seater")
-        st.text("Boot Space: 580L") 
+        st.text("Boot Space: 580L")
         st.text("Rate: $8/hr")
     with st.container(horizontal=True, horizontal_alignment="distribute"):
       st.image(image_url4, caption="Mazda CX-3",width=500)

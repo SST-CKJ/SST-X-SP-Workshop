@@ -1,11 +1,6 @@
 streamlit
 pandas
-os
-csv
-datetime
 openai
-langchain_openai
-langchain.agents
-langchain.agents.middleware
-PIL
-base64
+langchain
+langchain-openai
+pillow
