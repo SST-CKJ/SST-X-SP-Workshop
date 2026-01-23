@@ -44,7 +44,7 @@ image_url5 = "https://media.mediaresults.com/wp-content/uploads/2025/08/26-trail
 
 
 #Setup AI
-API_KEY = st.secrets("OPENAI_API_KEY")
+API_KEY = st.secrets["OPENAI_API_KEY"]
 @dynamic_prompt
 def context(request: ModelRequest) -> str:
   return """
